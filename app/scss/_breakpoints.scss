@@ -1,0 +1,95 @@
+// breakpoints are based on the following Bootstrap design guidelines
+// https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+@mixin xs {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin l {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media only screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+// down
+@mixin sm-down {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin m-down {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin l-down {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin xl-down {
+  @media only screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+// up
+
+@mixin sm-up {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin m-up {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin l-up {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl-up {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxl-up {
+  @media only screen and (min-width: 1400px) {
+    @content;
+  }
+}

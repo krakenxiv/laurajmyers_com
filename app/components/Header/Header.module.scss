@@ -1,0 +1,97 @@
+@import "../../scss/breakpoints";
+@import "../../scss/colors";
+
+.header {
+  background-color: $contrast-bg;
+  color: $contrast-text;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+
+  @include m-down {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .headerHomeLink {
+    align-content: center;
+    color: inherit;
+    display: grid;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    height: 88px;
+    justify-items: left;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    span {
+      color: inherit;
+      display: block;
+    }
+  }
+
+  nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: "Josefin Sans", sans-serif;
+    justify-content: center;
+
+    @include m-down {
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+      font-size: 16px;
+      margin-right: 20px;
+      padding: 10px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $contrast-hover;
+      }
+      &:link {
+        color: inherit;
+      }
+    }
+
+    .activeLink {
+      border-bottom: 1px solid $contrast-text;
+    }
+    .nonactiveLink {
+      border-bottom: 0;
+    }
+
+    .headerContactNonactive {
+      border: 1px solid $contrast-text;
+
+      &:hover {
+        background-color: $main-bg;
+        color: $main-text;
+      }
+
+      @include m-down {
+        border: 0;
+      }
+    }
+
+    .headerContactActive {
+      background-color: $main-bg;
+      color: $main-text;
+
+      &:hover {
+        color: $contrast-hover;
+      }
+
+      @include m-down {
+        background-color: $contrast-bg;
+        color: $contrast-text !important;
+        border-bottom: 1px solid $contrast-text;
+      }
+    }
+  }
+}

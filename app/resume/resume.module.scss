@@ -1,0 +1,40 @@
+@import "../scss/breakpoints";
+@import "../scss/colors";
+
+.resumeContainer {
+  margin-top: 50px;
+  font-family: "Josefin Sans", sans-serif;
+
+  .resumeTable {
+    margin-bottom: 20px;
+
+    .tableHeader {
+      border-bottom: 1px solid $table-border;
+      font-size: 20px;
+      padding: 5px 0;
+    }
+
+    .row {
+      border-bottom: 1px solid $table-border;
+      display: flex;
+      flex-direction: row;
+      padding: 5px 0;
+
+      @include sm-down {
+        border: 1px solid $table-border;
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .column {
+        flex: 33% 1 1;
+        font-size: 18px;
+      }
+
+      .columnWide {
+        flex: 66% 1 1;
+        font-size: 18px;
+      }
+    }
+  }
+}

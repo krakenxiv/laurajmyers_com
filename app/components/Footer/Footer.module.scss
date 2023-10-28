@@ -1,0 +1,15 @@
+@import "../../scss/colors";
+
+.footer {
+  align-content: center;
+  background-color: $contrast-bg;
+  bottom: 0;
+  color: $contrast-text;
+  display: grid;
+  font-family: "Josefin Sans", sans-serif;
+  justify-content: center;
+  height: 60px;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+}

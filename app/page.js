@@ -1,95 +1,62 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.scss";
+import globalStyles from "./scss/_global.module.scss";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <>
+      <img
+        src="/assets/images/mainShot.jpg"
+        className={globalStyles.imageCentered}
+      />
+      <h1>Voice instruction for singers and actors</h1>
+      <h2>Improve vocal control, ability, and confidence.</h2>
+      <div>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
+          My name is Laura Myers and I help people vocalize. Since 2003, I have
+          been providing students with private vocal lessons; first in Los
+          Angeles, CA and now in Portland, Oregon. I bring over 25 years of
+          performance experience on stage, television and film to our lessons.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <p>
+          Providing a safe and supportive learning environment for the nervous
+          beginner to the seasoned professional singer has always been an
+          important part of my philosophy. The more you feel at ease, the more
+          you will learn.
+        </p>
+        <p>
+          During the course of our sessions I diagnose and transform your
+          singing challenges into healthy, beautiful vocal production. Each
+          student possesses different strengths and weaknesses so my lessons are
+          tailored to fit your individual needs.
+        </p>
+        <p>
+          <strong>Beginners:</strong>
+          <br />
+          Do you suffer from stage fright? Together we can find the causes of
+          your fears and how to move past them.
+        </p>
+        <p>
+          <strong>Intermediate to advanced singers:</strong>
+          <br />
+          Are you experiencing difficulties with breath management or
+          transitioning to different registers of the voice? I can help.
+        </p>
+        <p>Write to me or call today with your vocal goals and concerns.</p>
+        <p>
+          It is normal to feel unsure about taking that first step toward
+          something new. Don't let that stop you from exploring your voice and
+          expanding your world. I'm ready if you are!
+        </p>
+        <p>Rock, pop, jazz, and country and classical are all welcome.</p>
+        <p>
+          <strong>Audition preparation:</strong>
+          <br />
+          Musical theater, classical training, dramatic coaching and diction
+          services are available at my studio as well. Come in and prepare for
+          that audition! If your goal is American Idol or Americas Got Talent,
+          come and see me first!
+        </p>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }
