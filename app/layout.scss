@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Josefin+Sans:wght@100;300;800&family=Passion+One&display=swap");
-@import "./scss/colors";
-@import "./scss/breakpoints";
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Josefin+Sans:wght@100;300;800&family=Passion+One&display=swap');
+@import './scss/colors';
+@import './scss/breakpoints';
 
 :root {
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 }
 
 * {
@@ -23,7 +23,7 @@ body {
 body {
   background-color: $main-bg;
   color: $main-text;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 
   main {
     margin: 0 auto;
@@ -35,17 +35,17 @@ body {
     }
 
     h1 {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       margin: 1em 0;
     }
 
     h2 {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       margin: 1em 0;
     }
 
     p {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       font-size: 20px;
       margin-bottom: 1em;
 

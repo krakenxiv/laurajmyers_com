@@ -1,5 +1,5 @@
-import styles from "./page.module.scss";
-import globalStyles from "./scss/_global.module.scss";
+import styles from './page.module.scss';
+import globalStyles from './scss/_global.module.scss';
 
 export default function Home() {
   return (

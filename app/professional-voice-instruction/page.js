@@ -1,10 +1,10 @@
-import styles from "./professional-voice-instruction.module.scss";
+import styles from './professional-voice-instruction.module.scss';
 
 export const metadata = {
   title:
-    "Laura Myers | Portland, OR | Private Voice Instruction + Lessons &mdash; Laura Myers 971-275-3557",
+    'Laura Myers | Portland, OR | Private Voice Instruction + Lessons &mdash; Laura Myers 971-275-3557',
   description:
-    "Laura Myers has taught private instruction in PDX, OR for almost 10 years. She specializes in improved vocal control, first time students, reduced stage fright.",
+    'Laura Myers has taught private instruction in PDX, OR for almost 10 years. She specializes in improved vocal control, first time students, reduced stage fright.',
 };
 
 export default function ProfessionalVoiceInstruction() {
@@ -21,7 +21,7 @@ export default function ProfessionalVoiceInstruction() {
           levels of ability in the Portland, Oregon area. I bring over 20 years
           of experience to you with lessons tailored to each students needs. We
           will work together to improve technique and remove stumbling blocks.
-          And don't worry, lessons are fun!
+          And don&apos;t worry, lessons are fun!
         </p>
         <p>
           Performance anxiety, pitch control, breath control, increased stamina

@@ -1,11 +1,11 @@
-import Link from "next/link";
-import styles from "./contact-us.module.scss";
+import Link from 'next/link';
+import styles from './contact-us.module.scss';
 
 export const metadata = {
   title:
-    "Laura Myers | Contact Me | Schedule Voice Lessons + Instructio &mdash; Laura Myers 971-275-3557",
+    'Laura Myers | Contact Me | Schedule Voice Lessons + Instructio &mdash; Laura Myers 971-275-3557',
   description:
-    "Contact Laura Myers today to schedule private voice lessons, for a quote, or to contact her about appearing in your current productions.",
+    'Contact Laura Myers today to schedule private voice lessons, for a quote, or to contact her about appearing in your current productions.',
 };
 
 export default function ContactUs() {
@@ -15,11 +15,11 @@ export default function ContactUs() {
       <h2>Schedule an appointment or ask a question.</h2>
       <div className={styles.contactForm}>
         <p>
-          Please contact me via this form, emailing me at{" "}
+          Please contact me via this form, emailing me at{' '}
           <Link href="mailto:getvocalnow@gmail.com?subject=Inquiry%20from%20Laurajmyers.com">
             getvocalnow@gmail.com
-          </Link>{" "}
-          or by calling me at{" "}
+          </Link>{' '}
+          or by calling me at{' '}
           <Link href="tel:971-275-3557">(971) 275-3557</Link>.
         </p>
         <form

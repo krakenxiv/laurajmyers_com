@@ -1,4 +1,4 @@
-import styles from "./form-success.module.scss";
+import styles from './form-success.module.scss';
 
 export default function FormSuccess() {
   return (

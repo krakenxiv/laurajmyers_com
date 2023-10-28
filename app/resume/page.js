@@ -1,10 +1,10 @@
-import styles from "./resume.module.scss";
+import styles from './resume.module.scss';
 
 export const metadata = {
   title:
-    "Laura Myers | Actor&#39;s Resume | Vocalist Experience | Portland, OR &mdash; Laura Myers 971-275-3557",
+    'Laura Myers | Actor&#39;s Resume | Vocalist Experience | Portland, OR &mdash; Laura Myers 971-275-3557',
   description:
-    "Laura Myers is an actor and vocalist in Portland, OR. She&apos;s experienced in  tv, radio, stage, vo work &amp; has taught private voice instruction for almost 10 years.",
+    'Laura Myers is an actor and vocalist in Portland, OR. She&apos;s experienced in  tv, radio, stage, vo work &amp; has taught private voice instruction for almost 10 years.',
 };
 
 export default function Resume() {

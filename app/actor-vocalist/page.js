@@ -1,11 +1,11 @@
-import styles from "./actor-vocalist.module.scss";
-import globalStyles from "../scss/_global.module.scss";
+import styles from './actor-vocalist.module.scss';
+import globalStyles from '../scss/_global.module.scss';
 
 export const metadata = {
   title:
-    "Laura Myers | Acting + Singing + Voice Over | Portland, OR &mdash; Laura Myers 971-275-3557",
+    'Laura Myers | Acting + Singing + Voice Over | Portland, OR &mdash; Laura Myers 971-275-3557',
   description:
-    "Laura Myers has been acting and singing onstage for over 20 years. An experienced vocalist, she has appeared on tv, radio, and stages in SF, LA, and PDX, OR.",
+    'Laura Myers has been acting and singing onstage for over 20 years. An experienced vocalist, she has appeared on tv, radio, and stages in SF, LA, and PDX, OR.',
 };
 
 export default function ActorVocalist() {

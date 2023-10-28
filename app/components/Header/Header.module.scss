@@ -1,5 +1,5 @@
-@import "../../scss/breakpoints";
-@import "../../scss/colors";
+@import '../../scss/breakpoints';
+@import '../../scss/colors';
 
 .header {
   background-color: $contrast-bg;
@@ -18,7 +18,7 @@
     align-content: center;
     color: inherit;
     display: grid;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     height: 88px;
     justify-items: left;
@@ -36,7 +36,7 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     justify-content: center;
 
     @include m-down {

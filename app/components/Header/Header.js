@@ -1,7 +1,7 @@
-"use client";
-import Link from "next/link";
-import styles from "./Header.module.scss";
-import { usePathname } from "next/navigation";
+'use client';
+import Link from 'next/link';
+import styles from './Header.module.scss';
+import { usePathname } from 'next/navigation';
 
 export const Header = () => {
   const currentRoute = usePathname();
@@ -15,7 +15,7 @@ export const Header = () => {
         <Link
           href="/"
           className={
-            currentRoute === "/" ? styles.activeLink : styles.nonactiveLink
+            currentRoute === '/' ? styles.activeLink : styles.nonactiveLink
           }
         >
           Home
@@ -23,7 +23,7 @@ export const Header = () => {
         <Link
           href="/professional-voice-instruction"
           className={
-            currentRoute === "/professional-voice-instruction"
+            currentRoute === '/professional-voice-instruction'
               ? styles.activeLink
               : styles.nonactiveLink
           }
@@ -33,7 +33,7 @@ export const Header = () => {
         <Link
           href="/stage-fright"
           className={
-            currentRoute === "/stage-fright"
+            currentRoute === '/stage-fright'
               ? styles.activeLink
               : styles.nonactiveLink
           }
@@ -43,7 +43,7 @@ export const Header = () => {
         <Link
           href="/public-speaking"
           className={
-            currentRoute === "/public-speaking"
+            currentRoute === '/public-speaking'
               ? styles.activeLink
               : styles.nonactiveLink
           }
@@ -53,7 +53,7 @@ export const Header = () => {
         <Link
           href="/actor-vocalist"
           className={
-            currentRoute === "/actor-vocalist"
+            currentRoute === '/actor-vocalist'
               ? styles.activeLink
               : styles.nonactiveLink
           }
@@ -63,7 +63,7 @@ export const Header = () => {
         <Link
           href="/resume"
           className={
-            currentRoute === "/resume"
+            currentRoute === '/resume'
               ? styles.activeLink
               : styles.nonactiveLink
           }
@@ -73,7 +73,7 @@ export const Header = () => {
         <Link
           href="/contact-us"
           className={
-            currentRoute === "/contact-us"
+            currentRoute === '/contact-us'
               ? styles.headerContactActive
               : styles.headerContactNonactive
           }

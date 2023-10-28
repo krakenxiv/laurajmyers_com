@@ -1,10 +1,10 @@
-import styles from "./public-speaking.module.scss";
+import styles from './public-speaking.module.scss';
 
 export const metadata = {
   title:
-    "Laura Myers | Portland, OR | Public Speaking Assistance &mdash; Laura Myers 971-275-3557",
+    'Laura Myers | Portland, OR | Public Speaking Assistance &mdash; Laura Myers 971-275-3557',
   description:
-    "Laura Myers has taught private instruction in PDX, OR for almost 10 years. She specializes in improved vocal control, first time students, reduced  stage fright.",
+    'Laura Myers has taught private instruction in PDX, OR for almost 10 years. She specializes in improved vocal control, first time students, reduced  stage fright.',
 };
 
 export default function PublicSpeaking() {
