@@ -4,14 +4,14 @@ export const metadata = {
   title:
     "Laura Myers | Actor&#39;s Resume | Vocalist Experience | Portland, OR &mdash; Laura Myers 971-275-3557",
   description:
-    "Laura Myers is an actor and vocalist in Portland, OR. She's experienced in  tv, radio, stage, vo work &amp; has taught private voice instruction for almost 10 years.",
+    "Laura Myers is an actor and vocalist in Portland, OR. She&apos;s experienced in  tv, radio, stage, vo work &amp; has taught private voice instruction for almost 10 years.",
 };
 
 export default function Resume() {
   return (
     <>
       <h1>Laura Myers resumé</h1>
-      <h2>Laura's experience on paper (digitally speaking, of course).</h2>
+      <h2>Laura&apos;s experience on paper (digitally speaking, of course).</h2>
       <div className={styles.resumeContainer}>
         {/* film */}
         <div className={styles.resumeTable}>
@@ -64,7 +64,9 @@ export default function Resume() {
           </div>
 
           <div className={styles.row}>
-            <div className={styles.column}>BEN STEIN'S COURTROOM (Pilot)</div>
+            <div className={styles.column}>
+              BEN STEIN&apos;S COURTROOM (Pilot)
+            </div>
             <div className={styles.column}>Co-Star</div>
             <div className={styles.column}>Peter Weber/ Comedy Central</div>
           </div>
@@ -100,7 +102,7 @@ export default function Resume() {
           <div className={styles.row}>
             <div className={styles.column}>-"Voyage D/Amour"</div>
             <div className={styles.column}>
-              Zephyr Theatre/ Edinburgh Fringe Festival '04
+              Zephyr Theatre/ Edinburgh Fringe Festival &apos;04
             </div>
             <div className={styles.column}></div>
           </div>
@@ -118,7 +120,7 @@ export default function Resume() {
           </div>
 
           <div className={styles.row}>
-            <div className={styles.column}>JOHNNY CAN'T READ</div>
+            <div className={styles.column}>JOHNNY CAN&apos;T READ</div>
             <div className={styles.column}>Company Member</div>
             <div className={styles.column}>West Coast Tour</div>
           </div>

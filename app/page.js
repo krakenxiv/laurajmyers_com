@@ -44,8 +44,8 @@ export default function Home() {
         <p>Write to me or call today with your vocal goals and concerns.</p>
         <p>
           It is normal to feel unsure about taking that first step toward
-          something new. Don't let that stop you from exploring your voice and
-          expanding your world. I'm ready if you are!
+          something new. Don&apos;t let that stop you from exploring your voice
+          and expanding your world. I&apos;m ready if you are!
         </p>
         <p>Rock, pop, jazz, and country and classical are all welcome.</p>
         <p>
