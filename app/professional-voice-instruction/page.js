@@ -36,8 +36,9 @@ export default function ProfessionalVoiceInstruction() {
         <p>
           Laura
           <br />
-          <Link href="mailto:getvocalnow@gmail.com?subject=Inquiry%20from%20Laurajmyers.com"></Link>{' '}
-          getvocalnow@gmail.com{' '}
+          <Link href="mailto:getvocalnow@gmail.com?subject=Inquiry%20from%20Laurajmyers.com">
+            getvocalnow@gmail.com
+          </Link>{' '}
           <Link href="tel:971-275-3557">(971) 275-3557</Link>
         </p>
       </div>
