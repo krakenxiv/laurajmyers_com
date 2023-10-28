@@ -25,6 +25,7 @@ export default function ContactUs() {
         <form
           name="contact"
           method="POST"
+          netlify
           data-netlify="true"
           action="/form-success"
         >

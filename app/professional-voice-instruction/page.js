@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './professional-voice-instruction.module.scss';
 
 export const metadata = {
@@ -32,7 +33,13 @@ export default function ProfessionalVoiceInstruction() {
           References available upon request. Reduced price with the purchase of
           a series.
         </p>
-        <p>Laura getvocalnow@gmail.com 971-275-3557</p>
+        <p>
+          Laura
+          <br />
+          <Link href="mailto:getvocalnow@gmail.com?subject=Inquiry%20from%20Laurajmyers.com"></Link>{' '}
+          getvocalnow@gmail.com{' '}
+          <Link href="tel:971-275-3557">(971) 275-3557</Link>
+        </p>
       </div>
     </>
   );
