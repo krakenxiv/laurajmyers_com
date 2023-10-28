@@ -88,19 +88,21 @@ export default function Resume() {
           </div>
 
           <div className={styles.row}>
-            <div className={styles.column}>-"Hollywood"</div>
+            <div className={styles.column}>-&quot;Hollywood&quot;</div>
             <div className={styles.column}>Zephyr Theatre</div>
             <div className={styles.column}></div>
           </div>
 
           <div className={styles.row}>
-            <div className={styles.column}>-"The Shoe Show"Zephyr</div>
+            <div className={styles.column}>
+              -&quot;The Shoe Show&quot;Zephyr
+            </div>
             <div className={styles.column}>Zephyr / Comedy Central Stage</div>
             <div className={styles.column}></div>
           </div>
 
           <div className={styles.row}>
-            <div className={styles.column}>-"Voyage D/Amour"</div>
+            <div className={styles.column}>-&quot;Voyage D/Amour&quot;</div>
             <div className={styles.column}>
               Zephyr Theatre/ Edinburgh Fringe Festival &apos;04
             </div>
@@ -108,7 +110,9 @@ export default function Resume() {
           </div>
 
           <div className={styles.row}>
-            <div className={styles.column}>KURT WIETZMAN "Talented"</div>
+            <div className={styles.column}>
+              KURT WIETZMAN &quot;Talented&quot;
+            </div>
             <div className={styles.column}>Guest Star</div>
             <div className={styles.column}>The Fake Gallery</div>
           </div>
@@ -161,7 +165,9 @@ export default function Resume() {
         <div className={styles.resumeTable}>
           <div className={styles.tableHeader}>VOICE OVER EXPERIENCE</div>
           <div className={styles.row}>
-            <div className={styles.column}>KURT WIETZMAN "Talented"</div>
+            <div className={styles.column}>
+              KURT WIETZMAN &quot;Talented&quot;
+            </div>
             <div className={styles.column}>Guest Star</div>
             <div className={styles.column}>Vapid Core Music</div>
           </div>
