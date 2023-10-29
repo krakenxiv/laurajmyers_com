@@ -18,7 +18,6 @@
     align-content: center;
     color: inherit;
     display: grid;
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     height: 88px;
     justify-items: left;
@@ -36,7 +35,6 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    font-family: 'Josefin Sans', sans-serif;
     justify-content: center;
 
     @include m-down {
@@ -61,6 +59,7 @@
 
     .activeLink {
       border-bottom: 1px solid $contrast-text;
+      color: $main-link;
     }
     .nonactiveLink {
       border-bottom: 0;
@@ -80,11 +79,11 @@
     }
 
     .headerContactActive {
-      background-color: $main-bg;
-      color: $main-text;
+      background-color: $main-link;
+      color: $contrast-text;
 
       &:hover {
-        color: $contrast-hover;
+        color: $main-text-soft;
       }
 
       @include m-down {
