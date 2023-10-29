@@ -1,6 +1,14 @@
 @import '../scss/colors';
 
 .contactForm {
+  .subjectHeadr {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .required {
+    color: $main-text-soft;
+  }
   label {
     display: block;
     font-family: 'Josefin Sans', sans-serif;
@@ -15,9 +23,36 @@
     margin-bottom: 20px;
     padding: 5px 10px;
   }
+
+  label {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    border: 2px solid #ccc;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+
+  .checkboxes {
+    .checkbox {
+      display: flex;
+      justify-content: flex-start;
+
+      label {
+        margin-left: 10px;
+      }
+    }
+  }
+
   textarea {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
+    height: 100px;
     margin-bottom: 20px;
     padding: 5px 10px;
   }

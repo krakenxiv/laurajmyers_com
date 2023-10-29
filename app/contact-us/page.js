@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import globalStyles from '../scss/_global.module.scss';
 import styles from './contact-us.module.scss';
 
 export const metadata = {
@@ -30,19 +31,71 @@ export default function ContactUs() {
           action="/form-success"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <div>
-            <label htmlFor="yourname">First Name:</label>
-            <input type="text" name="firstname" id="firstname" />
-            <label htmlFor="yourname">Last Name:</label>
-            <input type="text" name="lastname" id="lastname" />
+          <div className={styles.subjectHeadr}>
+            Name <span className={styles.required}>(required)</span>
           </div>
-          <div>
-            <label htmlFor="youremail">Your Email:</label>
-            <input type="email" name="email" id="youremail" />
+          <div className={globalStyles.row}>
+            <div className={globalStyles.column50}>
+              <label htmlFor="yourname">First Name:</label>
+              <input type="text" name="firstname" id="firstname" />
+            </div>
+            <div className={globalStyles.column50}>
+              <label htmlFor="yourname">Last Name:</label>
+              <input type="text" name="lastname" id="lastname" />
+            </div>
           </div>
-          <div>
-            <label htmlFor="yourmessage">Message:</label>
-            <textarea name="message" id="yourmessage"></textarea>
+          <div className={styles.subjectHeadr}>
+            Subject <span className={styles.required}>(required)</span>
+          </div>
+          <div className={globalStyles.row}>
+            <div className={`${globalStyles.column100} ${styles.checkboxes}`}>
+              <div className={styles.checkbox}>
+                <input type="checkbox" id="singing" name="singing" />
+                <label htmlFor="singing">Singing</label>
+              </div>
+              <div className={styles.checkbox}>
+                <input
+                  type="checkbox"
+                  id="publicSpeaking"
+                  name="publicSpeaking"
+                />
+                <label htmlFor="publicSpeaking">Public Speaking</label>
+              </div>
+              <div className={styles.checkbox}>
+                <input type="checkbox" id="acting" name="acting" />
+                <label htmlFor="acting">Acting</label>
+              </div>
+
+              <div className={styles.checkbox}>
+                <input type="checkbox" id="other" name="other" />
+                <label htmlFor="other">Other</label>
+              </div>
+            </div>
+          </div>
+
+          <div className={globalStyles.row}>
+            <div className={globalStyles.column100}>
+              <label htmlFor="email">
+                Email Address{' '}
+                <span className={styles.required}>(required)</span>
+              </label>
+              <input type="email" name="email" id="email" />
+            </div>
+          </div>
+          <div className={globalStyles.row}>
+            <div className={globalStyles.column100}>
+              <label htmlFor="phone">Phone</label>
+              <input type="phone" name="phone" id="phone" />
+            </div>
+          </div>
+          <div className={globalStyles.row}>
+            <div className={globalStyles.column100}>
+              <label htmlFor="yourmessage">
+                How can I help you?{' '}
+                <span className={styles.required}>(required)</span>
+              </label>
+              <textarea name="message" id="yourmessage"></textarea>
+            </div>
           </div>
           <div>
             <button type="submit">Send</button>

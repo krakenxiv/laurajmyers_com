@@ -1,3 +1,4 @@
+import globalStyles from '../scss/_global.module.scss';
 import styles from './resume.module.scss';
 
 export const metadata = {
@@ -16,40 +17,76 @@ export default function Resume() {
         {/* film */}
         <div className={styles.resumeTable}>
           <div className={styles.tableHeader}>FILM EXPERIENCE</div>
-          <div className={styles.row}>
-            <div className={styles.column}>FILM</div>
-            <div className={styles.column}>ROLE</div>
-            <div className={styles.column}>DIRECTOR</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              FILM
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              ROLE
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              DIRECTOR
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>THE RIOT ACT</div>
-            <div className={styles.column}>2ND Supporting</div>
-            <div className={styles.column}>Roger Loftis/ Independent</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              THE RIOT ACT
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              2ND Supporting
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Roger Loftis/ Independent
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>SIMONE</div>
-            <div className={styles.column}>Featured</div>
-            <div className={styles.column}>Anthony Niccol/ New Line</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              SIMONE
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Featured
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Anthony Niccol/ New Line
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>JUDGE DREDD</div>
-            <div className={styles.column}>Featured VO</div>
-            <div className={styles.column}>Danny Cannon/ Carolco</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              JUDGE DREDD
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Featured VO
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Danny Cannon/ Carolco
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>THIRTEEN FLOORS</div>
-            <div className={styles.column}>2nd Supporting</div>
-            <div className={styles.column}>Josh Greenbaum/ Independent</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              THIRTEEN FLOORS
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              2nd Supporting
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Josh Greenbaum/ Independent
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>1024</div>
-            <div className={styles.column}>Lead</div>
-            <div className={styles.column}>Annette Ford/ Film Festivals</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              1024
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Lead
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Annette Ford/ Film Festivals
+            </div>
           </div>
         </div>
 
@@ -57,76 +94,128 @@ export default function Resume() {
         <div className={styles.resumeTable}>
           <div className={styles.tableHeader}>TELEVISION EXPERIENCE</div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>REASONABLE DOUBT</div>
-            <div className={styles.column}>Guest Lead</div>
-            <div className={styles.column}>Bob Allen/ Discovery Channel</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              REASONABLE DOUBT
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Guest Lead
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Bob Allen/ Discovery Channel
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
               BEN STEIN&apos;S COURTROOM (Pilot)
             </div>
-            <div className={styles.column}>Co-Star</div>
-            <div className={styles.column}>Peter Weber/ Comedy Central</div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Co-Star
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Peter Weber/ Comedy Central
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>ALL ABOUT YOU (Pilot)</div>
-            <div className={styles.column}>Guest Star</div>
-            <div className={styles.column}>David Brine/ October Fuchs</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              ALL ABOUT YOU (Pilot)
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Guest Star
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              David Brine/ October Fuchs
+            </div>
           </div>
         </div>
 
         {/* improv */}
         <div className={styles.resumeTable}>
           <div className={styles.tableHeader}>IMPROV / SKETCH EXPERIENCE</div>
-          <div className={styles.row}>
-            <div className={styles.column}>TOMBOYS IN FISHNETS</div>
-            <div className={styles.column}>Co-Star/ Asst. Dir.</div>
-            <div className={styles.column}></div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              TOMBOYS IN FISHNETS
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Co-Star/ Asst. Dir.
+            </div>
+            <div
+              className={`${globalStyles.column33} ${styles.column33}`}
+            ></div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>-&quot;Hollywood&quot;</div>
-            <div className={styles.column}>Zephyr Theatre</div>
-            <div className={styles.column}></div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              -&quot;Hollywood&quot;
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Zephyr Theatre
+            </div>
+            <div
+              className={`${globalStyles.column33} ${styles.column33}`}
+            ></div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
               -&quot;The Shoe Show&quot;Zephyr
             </div>
-            <div className={styles.column}>Zephyr / Comedy Central Stage</div>
-            <div className={styles.column}></div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Zephyr / Comedy Central Stage
+            </div>
+            <div
+              className={`${globalStyles.column33} ${styles.column33}`}
+            ></div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>-&quot;Voyage D/Amour&quot;</div>
-            <div className={styles.column}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              -&quot;Voyage D/Amour&quot;
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
               Zephyr Theatre/ Edinburgh Fringe Festival &apos;04
             </div>
-            <div className={styles.column}></div>
+            <div
+              className={`${globalStyles.column33} ${styles.column33}`}
+            ></div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
               KURT WIETZMAN &quot;Talented&quot;
             </div>
-            <div className={styles.column}>Guest Star</div>
-            <div className={styles.column}>The Fake Gallery</div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Guest Star
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              The Fake Gallery
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>THE LUNATIC FRINGE</div>
-            <div className={styles.column}>Co- Star</div>
-            <div className={styles.column}>The Punchline/ SF</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              THE LUNATIC FRINGE
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Co- Star
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              The Punchline/ SF
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>JOHNNY CAN&apos;T READ</div>
-            <div className={styles.column}>Company Member</div>
-            <div className={styles.column}>West Coast Tour</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              JOHNNY CAN&apos;T READ
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Company Member
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              West Coast Tour
+            </div>
           </div>
         </div>
 
@@ -135,101 +224,177 @@ export default function Resume() {
           <div className={styles.tableHeader}>
             MUSICALS / NIGHTCLUB EXPERIENCE
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>LAURA HERMANSTORFER</div>
-            <div className={styles.column}>Nightclub Act</div>
-            <div className={styles.column}>Singer/ SF& LA</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              LAURA HERMANSTORFER
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Nightclub Act
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Singer/ SF& LA
+            </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>THE KELSEY BAND</div>
-            <div className={styles.column}>Lead Vocals</div>
-            <div className={styles.column}>Singer/Woodwinds/SF</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              THE KELSEY BAND
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Lead Vocals
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Singer/Woodwinds/SF
+            </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>MALONE</div>
-            <div className={styles.column}>Lead & Harmony</div>
-            <div className={styles.column}>Vocals/Guitar/ SF</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              MALONE
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Lead & Harmony
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Vocals/Guitar/ SF
+            </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>LET ME CABARET YOU</div>
-            <div className={styles.column}>Lead</div>
-            <div className={styles.column}>Singer/ The Brasserie/ LA</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              LET ME CABARET YOU
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Lead
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Singer/ The Brasserie/ LA
+            </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>THE DRUNKARD</div>
-            <div className={styles.column}>Mary</div>
-            <div className={styles.column}>Gaslight Theatre/ OK</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              THE DRUNKARD
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Mary
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Gaslight Theatre/ OK
+            </div>
           </div>
         </div>
         {/* vo */}
         <div className={styles.resumeTable}>
           <div className={styles.tableHeader}>VOICE OVER EXPERIENCE</div>
-          <div className={styles.row}>
-            <div className={styles.column}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
               KURT WIETZMAN &quot;Talented&quot;
             </div>
-            <div className={styles.column}>Guest Star</div>
-            <div className={styles.column}>Vapid Core Music</div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Guest Star
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Vapid Core Music
+            </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>SEGA COMMERCIALS</div>
-            <div className={styles.column}>Principal Voices/Sounds</div>
-            <div className={styles.column}>Earwax Studios</div>
-          </div>
-
-          <div className={styles.row}>
-            <div className={styles.column}>MGMT. TRAINING</div>
-            <div className={styles.column}>Sandy & Lisa</div>
-            <div className={styles.column}>Ninth House Prod.</div>
-          </div>
-
-          <div className={styles.row}>
-            <div className={styles.column}>FAME WHORE (Feature Film)</div>
-            <div className={styles.column}>Principal Voices/ Sounds</div>
-            <div className={styles.column}>Blurco Prod.</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              SEGA COMMERCIALS
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Principal Voices/Sounds
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Earwax Studios
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>ILLUMINATIONS (Commercial)</div>
-            <div className={styles.column}>Feature Voice</div>
-            <div className={styles.column}>Pera Studios</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              MGMT. TRAINING
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Sandy & Lisa
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Ninth House Prod.
+            </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>ENTERPRISE(Commercial)</div>
-            <div className={styles.column}>Feature Voice</div>
-            <div className={styles.column}>Pera Studios</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              FAME WHORE (Feature Film)
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Principal Voices/ Sounds
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Blurco Prod.
+            </div>
+          </div>
+
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              ILLUMINATIONS (Commercial)
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Feature Voice
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Pera Studios
+            </div>
+          </div>
+
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              ENTERPRISE(Commercial)
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Feature Voice
+            </div>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Pera Studios
+            </div>
           </div>
         </div>
         {/* skills */}
         <div className={styles.resumeTable}>
           <div className={styles.tableHeader}>SPECIAL SKILLS</div>
-          <div className={styles.row}>
-            <div className={styles.column}>Language:</div>
-            <div className={styles.columnWide}>French (conversational)</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Language:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
+              French (conversational)
+            </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>Dialects:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Dialects:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               English, Southern, Midwestern, New York
             </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>Musician:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Musician:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               Guitar, clarinet, flute, hand percussion (own all instruments)
             </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>Sports:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Sports:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               Archery, croquet, fishing, rollerblading, roller skating, ice
               skating, swimming
             </div>
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>Additional:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Additional:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               Alternative Healing Facilitator, makeup artistry, great rapport
               with children and animals.
             </div>
@@ -238,30 +403,38 @@ export default function Resume() {
         {/* training */}
         <div className={styles.resumeTable}>
           <div className={styles.tableHeader}>TRAINING</div>
-          <div className={styles.row}>
-            <div className={styles.column}>Acting:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Acting:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               Jean Shelton Actors Lab/ SF, Cliff Osmond/ SF & LA
             </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>Improvisation:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Improvisation:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               Jim Crenna/ SF, Bay Area Theatre Sports/ SF
             </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>Singing:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Singing:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               Laurie Amat/ SF, J. Raoul Brody/ SF, Blue Bear School of Music
             </div>
           </div>
 
-          <div className={styles.row}>
-            <div className={styles.column}>Voice Over:</div>
-            <div className={styles.columnWide}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column33} ${styles.column33}`}>
+              Voice Over:
+            </div>
+            <div className={`${globalStyles.column66} ${styles.column66}`}>
               Voicetrax/ SF, Rick Zieff/ LA
             </div>
           </div>

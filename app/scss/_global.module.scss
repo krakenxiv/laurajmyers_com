@@ -1,4 +1,47 @@
+@import './breakpoints';
+@import './colors';
+
 .imageCentered {
   display: block;
   margin: 20px auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+
+  @include sm-down {
+    border: 1px solid $table-border;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .column {
+    flex: 33% 1 1;
+    font-size: 18px;
+  }
+
+  .column33 {
+    flex: 33% 1 1;
+  }
+
+  .column50 {
+    flex: 50% 1 1;
+
+    &:first-of-type {
+      padding-right: 10px;
+    }
+
+    &:last-of-type {
+      padding-left: 10px;
+    }
+  }
+
+  .column66 {
+    flex: 66% 1 1;
+  }
+
+  .column100 {
+    flex: 100% 1 1;
+  }
 }
