@@ -1,5 +1,5 @@
-import styles from './actor-vocalist.module.scss';
 import globalStyles from '../scss/_global.module.scss';
+import styles from './actor-vocalist.module.scss';
 
 export const metadata = {
   title:

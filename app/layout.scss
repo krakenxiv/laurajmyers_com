@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Josefin+Sans:wght@100;300;800&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Josefin+Sans:wght@200;500;800&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@200;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap');
+
 @import './scss/colors';
 @import './scss/breakpoints';
 
@@ -10,8 +13,12 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Cormorant Garamond', serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
   margin: 0;
+  padding: 0;
 }
 
 html,
@@ -23,7 +30,6 @@ body {
 body {
   background-color: $main-bg;
   color: $main-text;
-  font-family: 'Josefin Sans', sans-serif;
 
   main {
     margin: 0 auto;
@@ -35,17 +41,16 @@ body {
     }
 
     h1 {
-      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 800;
       margin: 1em 0;
     }
 
     h2 {
-      font-family: 'Josefin Sans', sans-serif;
       margin: 1em 0;
+      font-weight: 500;
     }
 
     p {
-      font-family: 'Josefin Sans', sans-serif;
       font-size: 20px;
       margin-bottom: 1em;
 
@@ -61,7 +66,7 @@ body {
       }
 
       strong {
-        font-weight: 800;
+        font-weight: 500;
       }
     }
   }

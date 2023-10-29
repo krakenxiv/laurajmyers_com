@@ -27,14 +27,6 @@
 
   .column50 {
     flex: 50% 1 1;
-
-    &:first-of-type {
-      padding-right: 10px;
-    }
-
-    &:last-of-type {
-      padding-left: 10px;
-    }
   }
 
   .column66 {

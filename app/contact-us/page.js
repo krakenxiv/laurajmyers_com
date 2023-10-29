@@ -14,7 +14,7 @@ export default function ContactUs() {
     <>
       <h1>Contact Laura Myers</h1>
       <h2>Schedule an appointment or ask a question.</h2>
-      <div className={styles.contactForm}>
+      <div className={styles.contactFormContainer}>
         <p>
           Please contact me via this form, emailing me at{' '}
           <Link href="mailto:getvocalnow@gmail.com?subject=Inquiry%20from%20Laurajmyers.com">
@@ -29,25 +29,26 @@ export default function ContactUs() {
           netlify
           data-netlify="true"
           action="/form-success"
+          className={styles.contactForm}
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className={styles.subjectHeadr}>
             Name <span className={styles.required}>(required)</span>
           </div>
-          <div className={globalStyles.row}>
-            <div className={globalStyles.column50}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
+            <div className={`${globalStyles.column50} ${styles.column50}`}>
               <label htmlFor="yourname">First Name:</label>
-              <input type="text" name="firstname" id="firstname" />
+              <input type="text" name="firstname" id="firstname" required />
             </div>
-            <div className={globalStyles.column50}>
+            <div className={`${globalStyles.column50} ${styles.column50}`}>
               <label htmlFor="yourname">Last Name:</label>
-              <input type="text" name="lastname" id="lastname" />
+              <input type="text" name="lastname" id="lastname" required />
             </div>
           </div>
           <div className={styles.subjectHeadr}>
             Subject <span className={styles.required}>(required)</span>
           </div>
-          <div className={globalStyles.row}>
+          <div className={`${globalStyles.row} ${styles.row}`}>
             <div className={`${globalStyles.column100} ${styles.checkboxes}`}>
               <div className={styles.checkbox}>
                 <input type="checkbox" id="singing" name="singing" />
@@ -72,29 +73,30 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-
-          <div className={globalStyles.row}>
+          <div className={styles.subjectHeadr}>
+            Email <span className={styles.required}>(required)</span>
+          </div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
             <div className={globalStyles.column100}>
-              <label htmlFor="email">
-                Email Address{' '}
-                <span className={styles.required}>(required)</span>
-              </label>
-              <input type="email" name="email" id="email" />
+              <label htmlFor="email">Email Address</label>
+              <input type="email" name="email" id="email" required />
             </div>
           </div>
-          <div className={globalStyles.row}>
+          <div className={styles.subjectHeadr}>Phone</div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
             <div className={globalStyles.column100}>
-              <label htmlFor="phone">Phone</label>
+              <label htmlFor="phone">Phone Number</label>
               <input type="phone" name="phone" id="phone" />
             </div>
           </div>
-          <div className={globalStyles.row}>
+          <div className={styles.subjectHeadr}>
+            Additional Information{' '}
+            <span className={styles.required}>(required)</span>
+          </div>
+          <div className={`${globalStyles.row} ${styles.row}`}>
             <div className={globalStyles.column100}>
-              <label htmlFor="yourmessage">
-                How can I help you?{' '}
-                <span className={styles.required}>(required)</span>
-              </label>
-              <textarea name="message" id="yourmessage"></textarea>
+              <label htmlFor="yourmessage">How can I help you? </label>
+              <textarea name="message" id="yourmessage" required></textarea>
             </div>
           </div>
           <div>
