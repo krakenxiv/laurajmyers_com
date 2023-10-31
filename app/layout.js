@@ -1,9 +1,19 @@
-import { Inter } from 'next/font/google';
+import { Playpen_Sans, Josefin_Sans } from 'next/font/google';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
+
 import './layout.scss';
 
-const inter = Inter({ subsets: ['latin'] });
+export const playpen = Playpen_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+export const josefinSans = Josefin_Sans({
+  weight: ['200', '300', '400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Laura Myers 971-275-3557',
@@ -14,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={josefinSans.className}>
         <Header />
         <main>{children}</main>
         <Footer />

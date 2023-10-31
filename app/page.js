@@ -3,7 +3,7 @@ import globalStyles from './scss/_global.module.scss';
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.home}>
       <img
         src="/assets/images/mainShot.jpg"
         className={globalStyles.imageCentered}
@@ -57,6 +57,6 @@ export default function Home() {
           come and see me first!
         </p>
       </div>
-    </>
+    </div>
   );
 }
