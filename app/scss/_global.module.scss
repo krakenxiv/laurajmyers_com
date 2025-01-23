@@ -1,5 +1,5 @@
-@import './breakpoints';
-@import './colors';
+@use './breakpoints';
+@use './colors';
 
 .imageCentered {
   display: block;
@@ -10,8 +10,8 @@
   flex-direction: row;
   padding: 5px 0;
 
-  @include sm-down {
-    border: 1px solid $table-border;
+  @include breakpoints.sm-down {
+    border: 1px solid colors.$table-border;
     flex-direction: column;
     padding: 10px;
   }

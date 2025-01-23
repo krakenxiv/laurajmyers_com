@@ -1,14 +1,18 @@
-@import '../../scss/colors';
+@use '../../scss/colors';
 
 .footer {
   align-content: center;
-  background-color: $contrast-bg;
+  background-color: colors.$contrast-bg;
   bottom: 0;
-  color: $contrast-text;
+  color: colors.$contrast-text;
   display: grid;
   justify-content: center;
   height: 60px;
   position: fixed;
   text-align: center;
   width: 100vw;
+
+  .version{
+    font-size: 10px;
+  }
 }

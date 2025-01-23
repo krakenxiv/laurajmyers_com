@@ -1,14 +1,14 @@
-@import '../../scss/breakpoints';
-@import '../../scss/colors';
+@use '../../scss/breakpoints';
+@use '../../scss/colors';
 
 .header {
-  background-color: $contrast-bg;
-  color: $contrast-text;
+  background-color: colors.$contrast-bg;
+  color: colors.$contrast-text;
   display: flex;
   height: 80px;
   justify-content: space-between;
 
-  @include m-down {
+  @include breakpoints.m-down {
     flex-direction: column;
     height: auto;
     padding-bottom: 10px;
@@ -37,7 +37,7 @@
     flex-direction: row;
     justify-content: center;
 
-    @include m-down {
+    @include breakpoints.m-down {
       flex-direction: column;
     }
 
@@ -50,7 +50,7 @@
       text-transform: uppercase;
 
       &:hover {
-        color: $contrast-hover;
+        color: colors.$contrast-hover;
       }
       &:link {
         color: inherit;
@@ -58,38 +58,38 @@
     }
 
     .activeLink {
-      border-bottom: 1px solid $contrast-text;
-      color: $main-link;
+      border-bottom: 1px solid colors.$contrast-text;
+      color: colors.$main-link;
     }
     .nonactiveLink {
       border-bottom: 0;
     }
 
     .headerContactNonactive {
-      border: 1px solid $contrast-text;
+      border: 1px solid colors.$contrast-text;
 
       &:hover {
-        background-color: $main-bg;
-        color: $main-text;
+        background-color: colors.$main-bg;
+        color: colors.$main-text;
       }
 
-      @include m-down {
+      @include breakpoints.m-down {
         border: 0;
       }
     }
 
     .headerContactActive {
-      background-color: $main-link;
-      color: $contrast-text;
+      background-color: colors.$main-link;
+      color: colors.$contrast-text;
 
       &:hover {
-        color: $main-text-soft;
+        color: colors.$main-text-soft;
       }
 
-      @include m-down {
-        background-color: $contrast-bg;
-        color: $contrast-text !important;
-        border-bottom: 1px solid $contrast-text;
+      @include breakpoints.m-down {
+        background-color: colors.$contrast-bg;
+        color: colors.$contrast-text !important;
+        border-bottom: 1px solid colors.$contrast-text;
       }
     }
   }

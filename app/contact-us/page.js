@@ -1,15 +1,46 @@
+"use client";
+
+import { useState } from 'react';
+import { redirect } from 'next/navigation'
 import Link from 'next/link';
 import globalStyles from '../scss/_global.module.scss';
 import styles from './contact-us.module.scss';
 
-export const metadata = {
-  title:
-    'Laura Myers | Contact Me | Schedule Voice Lessons + Instructio &mdash; Laura Myers 971-275-3557',
-  description:
-    'Contact Laura Myers today to schedule private voice lessons, for a quote, or to contact her about appearing in your current productions.',
-};
-
 export default function ContactUs() {
+
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState(null);
+  let redirectPath = null
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      setStatus('pending');
+      setError(null);
+      const contactForm = event.target;
+      const formData = new FormData(contactForm);
+      const res = await fetch('/__forms.html', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+      });
+      if (res.status === 200) {
+        setStatus('ok');
+        redirectPath = `/form-success`
+      } else {
+        setStatus('error');
+        setError(`${res.status} ${res.statusText}`);
+      }
+    } catch (e) {
+      setStatus('error');
+      setError(`${e}`);
+    }finally {
+      if (redirectPath  === '/form-success') {
+        redirect(redirectPath);
+      }
+    }
+  };
   return (
     <>
       <h1>Contact Laura Myers</h1>
@@ -23,15 +54,16 @@ export default function ContactUs() {
           or by calling me at{' '}
           <Link href="tel:971-275-3557">(971) 275-3557</Link>.
         </p>
-        <form
-          name="contact"
-          method="POST"
-          netlify
-          data-netlify="true"
-          action="/form-success"
-          className={styles.contactForm}
-        >
+
+
+        <form name="contact" onSubmit={handleFormSubmit} action="/form-success" className={styles.contactForm}>
           <input type="hidden" name="form-name" value="contact" />
+          {status === 'error' && ( 
+            <div className={styles.error}>
+              <p>There was an error submitting this form. Please contact me by phone or email.</p>
+              <p>Error: {error}</p>
+            </div>
+          )}
           <div className={styles.subjectHeadr}>
             Name <span className={styles.required}>(required)</span>
           </div>
@@ -55,11 +87,7 @@ export default function ContactUs() {
                 <label htmlFor="singing">Singing</label>
               </div>
               <div className={styles.checkbox}>
-                <input
-                  type="checkbox"
-                  id="publicSpeaking"
-                  name="publicSpeaking"
-                />
+                <input type="checkbox" id="publicSpeaking" name="publicSpeaking" />
                 <label htmlFor="publicSpeaking">Public Speaking</label>
               </div>
               <div className={styles.checkbox}>
@@ -107,3 +135,5 @@ export default function ContactUs() {
     </>
   );
 }
+
+
