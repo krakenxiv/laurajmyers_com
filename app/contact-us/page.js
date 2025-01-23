@@ -1,28 +1,40 @@
 "use client";
 
+import { useState } from 'react';
+import { redirect } from 'next/navigation'
 import Link from 'next/link';
 import globalStyles from '../scss/_global.module.scss';
 import styles from './contact-us.module.scss';
 
-// export const metadata = {
-//   title:
-//     'Laura Myers | Contact Me | Schedule Voice Lessons + Instructio &mdash; Laura Myers 971-275-3557',
-//   description:
-//     'Contact Laura Myers today to schedule private voice lessons, for a quote, or to contact her about appearing in your current productions.',
-// };
-
-
 export default function ContactUs() {
+
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState(null);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    console.log(new URLSearchParams(formData).toString());
-    await fetch("/__forms.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    });
+
+    try {
+      setStatus('pending');
+      setError(null);
+      const contactForm = event.target;
+      const formData = new FormData(contactForm);
+      const res = await fetch('/__forms.html', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+      });
+      if (res.status === 200) {
+          setStatus('ok');
+          redirect('/form-success');
+      } else {
+          setStatus('error');
+          setError(`${res.status} ${res.statusText}`);
+      }
+    } catch (e) {
+        setStatus('error');
+        setError(`${e}`);
+    }
   };
   return (
     <>
@@ -105,6 +117,16 @@ export default function ContactUs() {
           <div>
             <button type="submit">Send</button>
           </div>
+          {status === 'ok' && (
+            <div className="alert alert-success">
+                Submitted!
+            </div>
+          )}
+          {status === 'error' && (
+            <div className="alert alert-error">
+                {error}
+            </div>
+          )}
         </form>
       </div>
     </>
