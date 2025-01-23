@@ -23,7 +23,6 @@ export default function ContactUs() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     });
-    // Success and error handling ...
   };
   return (
     <>
@@ -38,7 +37,7 @@ export default function ContactUs() {
           or by calling me at{' '}
           <Link href="tel:971-275-3557">(971) 275-3557</Link>.
         </p>
-        <form name="contact" onSubmit={handleFormSubmit} className={styles.contactForm}>
+        <form name="contact" onSubmit={handleFormSubmit} action="/form-success" className={styles.contactForm}>
           <input type="hidden" name="form-name" value="contact" />
           <div className={styles.subjectHeadr}>
             Name <span className={styles.required}>(required)</span>
