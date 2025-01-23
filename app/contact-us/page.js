@@ -1,15 +1,30 @@
+"use client";
+
 import Link from 'next/link';
 import globalStyles from '../scss/_global.module.scss';
 import styles from './contact-us.module.scss';
 
-export const metadata = {
-  title:
-    'Laura Myers | Contact Me | Schedule Voice Lessons + Instructio &mdash; Laura Myers 971-275-3557',
-  description:
-    'Contact Laura Myers today to schedule private voice lessons, for a quote, or to contact her about appearing in your current productions.',
-};
+// export const metadata = {
+//   title:
+//     'Laura Myers | Contact Me | Schedule Voice Lessons + Instructio &mdash; Laura Myers 971-275-3557',
+//   description:
+//     'Contact Laura Myers today to schedule private voice lessons, for a quote, or to contact her about appearing in your current productions.',
+// };
+
 
 export default function ContactUs() {
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    console.log(new URLSearchParams(formData).toString());
+    await fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+    // Success and error handling ...
+  };
   return (
     <>
       <h1>Contact Laura Myers</h1>
@@ -23,14 +38,7 @@ export default function ContactUs() {
           or by calling me at{' '}
           <Link href="tel:971-275-3557">(971) 275-3557</Link>.
         </p>
-        <form
-          name="contact"
-          method="POST"
-          netlify
-          data-netlify="true"
-          action="/form-success"
-          className={styles.contactForm}
-        >
+        <form name="contact" onSubmit={handleFormSubmit} className={styles.contactForm}>
           <input type="hidden" name="form-name" value="contact" />
           <div className={styles.subjectHeadr}>
             Name <span className={styles.required}>(required)</span>
@@ -55,11 +63,7 @@ export default function ContactUs() {
                 <label htmlFor="singing">Singing</label>
               </div>
               <div className={styles.checkbox}>
-                <input
-                  type="checkbox"
-                  id="publicSpeaking"
-                  name="publicSpeaking"
-                />
+                <input type="checkbox" id="publicSpeaking" name="publicSpeaking" />
                 <label htmlFor="publicSpeaking">Public Speaking</label>
               </div>
               <div className={styles.checkbox}>
@@ -107,3 +111,5 @@ export default function ContactUs() {
     </>
   );
 }
+
+
