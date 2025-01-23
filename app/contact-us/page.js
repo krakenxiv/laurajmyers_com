@@ -10,6 +10,7 @@ export default function ContactUs() {
 
   const [status, setStatus] = useState(null);
   const [error, setError] = useState(null);
+  let redirectPath = null
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -25,15 +26,19 @@ export default function ContactUs() {
           body: new URLSearchParams(formData).toString()
       });
       if (res.status === 200) {
-          setStatus('ok');
-          redirect('/form-success');
+        setStatus('ok');
+        redirectPath = `/form-success`
       } else {
-          setStatus('error');
-          setError(`${res.status} ${res.statusText}`);
+        setStatus('error');
+        setError(`${res.status} ${res.statusText}`);
       }
     } catch (e) {
-        setStatus('error');
-        setError(`${e}`);
+      setStatus('error');
+      setError(`${e}`);
+    }finally {
+      if (redirectPath  === '/form-success') {
+        redirect(redirectPath);
+      }
     }
   };
   return (
@@ -49,8 +54,16 @@ export default function ContactUs() {
           or by calling me at{' '}
           <Link href="tel:971-275-3557">(971) 275-3557</Link>.
         </p>
+
+
         <form name="contact" onSubmit={handleFormSubmit} action="/form-success" className={styles.contactForm}>
           <input type="hidden" name="form-name" value="contact" />
+          {status === 'error' && ( 
+            <div className={styles.error}>
+              <p>There was an error submitting this form. Please contact me by phone or email.</p>
+              <p>Error: {error}</p>
+            </div>
+          )}
           <div className={styles.subjectHeadr}>
             Name <span className={styles.required}>(required)</span>
           </div>
@@ -117,16 +130,6 @@ export default function ContactUs() {
           <div>
             <button type="submit">Send</button>
           </div>
-          {status === 'ok' && (
-            <div className="alert alert-success">
-                Submitted!
-            </div>
-          )}
-          {status === 'error' && (
-            <div className="alert alert-error">
-                {error}
-            </div>
-          )}
         </form>
       </div>
     </>

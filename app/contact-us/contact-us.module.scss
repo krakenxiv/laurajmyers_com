@@ -97,4 +97,10 @@
     padding: 10px 20px;
     width: 120px;
   }
+
+  .error p {
+    color: colors.$error;
+    font-size: 20px;
+    font-weight: 800;
+  }
 }
