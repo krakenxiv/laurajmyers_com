@@ -1,4 +1,5 @@
 import styles from './public-speaking.module.scss';
+import { redirect } from 'next/navigation';
 
 export const metadata = {
   title:
@@ -8,21 +9,23 @@ export const metadata = {
 };
 
 export default function PublicSpeaking() {
-  return (
-    <>
-      <h1>Assistance with public speaking</h1>
-      <h2>
-        Learn how to communicate and get over your anxiety in front of a crowd.
-      </h2>
-      <div>
-        <p>
-          The number two fear in the western world is death. The number one fear
-          is public speaking. So it would seem that most people would rather die
-          than speak in front of a group of people. I can help you build the
-          self-confidence to become a better, more effective public speaker.
-          Learn how to engage your audience and entertain as well as inform.
-        </p>
-      </div>
-    </>
-  );
+  // redirect while business is closed.
+  redirect(`/`);
+  // return (
+  //   <>
+  //     <h1>Assistance with public speaking</h1>
+  //     <h2>
+  //       Learn how to communicate and get over your anxiety in front of a crowd.
+  //     </h2>
+  //     <div>
+  //       <p>
+  //         The number two fear in the western world is death. The number one fear
+  //         is public speaking. So it would seem that most people would rather die
+  //         than speak in front of a group of people. I can help you build the
+  //         self-confidence to become a better, more effective public speaker.
+  //         Learn how to engage your audience and entertain as well as inform.
+  //       </p>
+  //     </div>
+  //   </>
+  // );
 }

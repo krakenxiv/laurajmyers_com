@@ -9,9 +9,9 @@ export const Header = () => {
     <header className={styles.header}>
       <Link href="/" className={styles.headerHomeLink}>
         <span>Laura Myers</span>
-        <span>971-275-3557</span>
+        {/* <span>971-275-3557</span> */}
       </Link>
-      <nav>
+      {/* <nav>
         <Link
           href="/"
           className={
@@ -80,7 +80,7 @@ export const Header = () => {
         >
           Contact Us
         </Link>
-      </nav>
+      </nav> */}
     </header>
   );
 };
