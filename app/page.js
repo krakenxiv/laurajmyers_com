@@ -4,7 +4,7 @@ import styles from './page.module.scss';
 export default function Home() {
   return (
     <div className={styles.home}>
-      <h1 style={{textAlign: 'center'}}>Laura Myers Voice Studio is temporarilly closed.</h1>
+      <h1 style={{textAlign: 'center'}}>Laura Myers Voice Studio is temporarily closed.</h1>
       {/* <img
         src="/assets/images/mainShot.jpg"
         className={globalStyles.imageCentered}
