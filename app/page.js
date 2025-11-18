@@ -1,11 +1,10 @@
 import styles from './page.module.scss';
-// import globalStyles from './scss/_global.module.scss';
+import globalStyles from './scss/_global.module.scss';
 
 export default function Home() {
   return (
     <div className={styles.home}>
-      <h1 style={{textAlign: 'center'}}>Laura Myers Voice Studio is temporarily closed.</h1>
-      {/* <img
+     <img
         src="/assets/images/mainShot.jpg"
         className={globalStyles.imageCentered}
       />
@@ -57,7 +56,7 @@ export default function Home() {
           that audition! If your goal is American Idol or Americas Got Talent,
           come and see me first!
         </p>
-      </div> */}
+      </div> 
     </div>
   );
 }

@@ -10,33 +10,31 @@ export const metadata = {
 };
 
 export default function ActorVocalist() {
-  // redirect while business is closed.
-  redirect(`/`);
-  // return (
-  //   <>
-  //     <h1>Acting, improv, and singing for over 2 decades</h1>
-  //     <h2>
-  //       Learn how to overcome your fears in a friendly reassuring environment.
-  //     </h2>
-  //     <div>
-  //       <p>Laura has extensive experience on stage and on television.</p>
-  //     </div>
-  //     <img
-  //       src="/assets/images/hs_1.jpg"
-  //       className={globalStyles.imageCentered}
-  //     />
-  //     <img
-  //       src="/assets/images/hs_2.jpg"
-  //       className={globalStyles.imageCentered}
-  //     />
-  //     <img
-  //       src="/assets/images/hs_3.jpg"
-  //       className={globalStyles.imageCentered}
-  //     />
-  //     <img
-  //       src="/assets/images/hs_4.jpg"
-  //       className={globalStyles.imageCentered}
-  //     />
-  //   </>
-  // );
+  return (
+    <>
+      <h1>Acting, improv, and singing for over 2 decades</h1>
+      <h2>
+        Learn how to overcome your fears in a friendly reassuring environment.
+      </h2>
+      <div>
+        <p>Laura has extensive experience on stage and on television.</p>
+      </div>
+      <img
+        src="/assets/images/hs_1.jpg"
+        className={globalStyles.imageCentered}
+      />
+      <img
+        src="/assets/images/hs_2.jpg"
+        className={globalStyles.imageCentered}
+      />
+      <img
+        src="/assets/images/hs_3.jpg"
+        className={globalStyles.imageCentered}
+      />
+      <img
+        src="/assets/images/hs_4.jpg"
+        className={globalStyles.imageCentered}
+      />
+    </>
+  );
 }
